@@ -4,7 +4,7 @@ void main(List<String> arguments) {
 
   // this are variables and data types
 //......................................
-//   print(Mystring.contains("dart"));
+  //print(Mystring.contains("dart"));
 //   int MyInteger = 5;
 //   print(MyInteger.toString());
 //   // print(MyInteger.isEven);
@@ -22,10 +22,10 @@ void main(List<String> arguments) {
 
 // using variable key
 
-  var Mystring = 'welcome to learning dart language ';
+  //var Mystring = 'welcome to learning dart language ';
   // you can reassign your code
   //Mystring = "i love javascript"; // when you print it it will give you this
-  print(Mystring);
+  //print(Mystring);
 
   // to make your code unsignable you can add FINAL
 
@@ -51,10 +51,10 @@ void main(List<String> arguments) {
 
   // lets talk about operators
 
-  int Result;
-  Result = 5 * 5;
-  double resultDouble = 5 / 5;
-  Result = 6 ~/ 7; // this cut off the decimal making your answer to be a whole
+  //int Result;
+  //Result = 5 * 5;
+  //double resultDouble = 5 / 5;
+  //Result = 6 ~/ 7; // this cut off the decimal making your answer to be a whole
 
   // lets say you want to increase a value
   // int x = 6;
@@ -108,56 +108,4 @@ void main(List<String> arguments) {
   // for (int i = 0; i < 10; i++) {
   //   print(i);
   // }
-
-  // welcome to function
-// void means to return nothing
-  // return Nested String
-  String returnsStringNexted() {
-    return 'hello2';
-  }
-
-  print(returnsStringNexted());
-  print(returnsString());
 }
-
-//***************************************************************** */
-
-// creating a string function
-String returnsString() {
-  return 'hello';
-}
-
-void otherFunction() {
-  returnsString(); // you cann call this string here but you cannot call returnsStringNexted(); because its outside the scope of the function
-}
-
-void positionalParams(int x, double y, String greetind) {
-  positionalParams(
-      5, 3.5, "hi"); //this function is called three positional parameter
-}
-
-// we also have optional positional , the ? shows we want to make it nullable
-void optionalParams(int x, double y, [String? greeting]) {
-  optionalParams(3, 4);
-  optionalParams(3, 4, 'hi , optionally');
-}
-// we also have named optional parameters
-
-void nameOptionalParam({
-  int? x,
-  double? y,
-  String? greetings,
-}) {
-  nameOptionalParam(x: 4, greetings: 'hi');
-}
-
-// creating a named required parameters
-void nameRequiredParam({
-  required int x,
-  required double y,
-  required String greeting,
-}) {
-  nameRequiredParam(x: 5, y: 4.5, greeting: "hello");
-}
-// you can combine named parameters with positional parameters
-
