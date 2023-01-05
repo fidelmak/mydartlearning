@@ -1,11 +1,19 @@
 // class can also contain arguments
-import 'class.dart';
 
 class User {
   final String firstName;
   final String lastName;
 
-  User(this.firstName, this.lastName);
+  User({required this.firstName, required this.lastName});
+
+  String getFullName() => '$firstName $lastName';
+
+  String get fullName => '$firstName $lastName';
 }
 
-void main(List<String> args) {}
+void main(List<String> args) {
+  final user = User(firstName: 'John', lastName: 'Doe');
+  user.getFullName();
+  user.fullName;
+  user.firstName;
+}
