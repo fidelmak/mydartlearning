@@ -54,24 +54,44 @@ class Practice {}
 //   print(val2);
 // }
 
+//void main(List<String> args) {
+// using StringBuffer which concatenates strings for example
+
+// var xValue = "";
+// for (var i = 0; i < 90; ++i) {
+//   xValue += "$i ";
+// }
+// ;
+// print(xValue);
+
+// using buffer
+// var buffer = StringBuffer();
+// for (var i = 0; i < 90; ++i) {
+//   buffer.write("$i ");
+// }
+// ;
+// var value = buffer.toString();
+// print(value);
+//}
+//enumerated types
+// this are containers for constant values
+enum Fruits { Apple, Pear, Grapes, Banana, Orange }
+
 void main(List<String> args) {
-  // using StringBuffer which concatenates strings for example
+  Fruits liked = Fruits.Apple;
+  var disliked = Fruits.Banana;
+  print(liked.toString());
+  print(disliked.toString());
 
-  // var xValue = "";
-  // for (var i = 0; i < 90; ++i) {
-  //   xValue += "$i ";
-  // }
-  // ;
-  // print(xValue);
+  // you can also access this number by index
+  var a = Fruits.Apple.index;
+  var b = Fruits.Pear.index;
+  var c = Fruits.Grapes.index;
+  print(a);
+  print(b);
+  print(c);
 
-  // using buffer
-  // var buffer = StringBuffer();
-  // for (var i = 0; i < 90; ++i) {
-  //   buffer.write("$i ");
-  // }
-  // ;
-  // var value = buffer.toString();
-  // print(value);
+  var d = c + b;
 
-  //enumerated types
+  print(d);
 }
