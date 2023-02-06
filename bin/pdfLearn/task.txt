@@ -1,0 +1,2 @@
+tasks to do :
+create 10 functions with examples
