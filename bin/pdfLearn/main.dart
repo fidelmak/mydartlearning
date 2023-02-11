@@ -41,3 +41,11 @@ void main(List<String> args) {
   int plus(int y, int x) => y + x;
   print(plus(4, 3));
 }
+
+// creating something different using typedef
+typedef transform = int Function(int);
+transform twice(transform f) {
+  return (int x) {
+    return f(f(x));
+  };
+}

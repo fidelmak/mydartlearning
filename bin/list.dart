@@ -23,7 +23,7 @@ void main(List<String> args) {
 
   print(namesFiltered);
 
-  // we can also use loos to achieve the code above
+  // we can also use loops to achieve the code above
 
   for (int i = 0; i < namesFiltered.length; i++) {
     print(names[i]);
